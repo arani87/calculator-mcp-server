@@ -38,7 +38,7 @@ public class CalculatorService {
             double operand2,
             @McpProgressToken String progressToken
     ) {
-// 0% progress
+        // 0% progress
         exchange.progressNotification(new McpSchema.ProgressNotification(progressToken, 0.0, 1.0, "Calculation started"));
         double result = switch (operation.toLowerCase()) {
             case "add" -> operand1 + operand2;
